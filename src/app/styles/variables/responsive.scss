@@ -1,0 +1,11 @@
+@mixin responsive($widthType, $breakpointType) {
+	@if ($widthType == $max) {
+		@media (max-width: $breakpointType) {
+			@content;
+		}
+	} @else {
+		@media (min-width: $breakpointType) {
+			@content;
+		}
+	}
+}
