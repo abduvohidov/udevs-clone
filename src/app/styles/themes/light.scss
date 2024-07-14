@@ -1,10 +1,18 @@
 .g-root_theme_light {
-  --g-color-base-brand: #F9AB00;
-  --g-color-base-brand-hover: #d2741d;
-  --g-color-base-selection: #4a3a2c;
-  --g-color-base-selection-hover: #604225;
-  --g-color-line-brand: #d78538;
-  --g-color-text-brand: #e2a56c;
-  --g-color-text-link: #e2a56c;
-  --g-color-text-link-hover: #ecc39e;
+	--primary: #1b5bf7;
+	--primary-disabled: #84a0e7;
+	--secondary: #464359;
+	--dark: #18191f;
+	--opacity: rgba(255, 60, 0, 0.5686274509803921);
+	--background: #f4f7ff;
+	--font-color: #464359;
+	--bg-secondary: #e0e8ff;
+	--devops: #a8bfff;
+	--mobile: #dbe5ff;
+	--infrastructure: #d1dde8;
+	--frontend: #c6d6ff;
+	--design: #ced6ee;
+	--pm: #99b7df;
+	--testing: #e1e9fe;
+	--backend: #bddaed;
 }
