@@ -1,9 +1,4 @@
-import { Navigation } from "@/widgets/navigation/index";
+zexport const HomePage = () => {
 
-export const HomePage = () => {
-	return (
-		<>
-			<Navigation />
-		</>
-	);
+  return <><h1>Home page</h1></>
 };
