@@ -1,4 +1,4 @@
-export const HomePage = () => {
+zexport const HomePage = () => {
 
   return <><h1>Home page</h1></>
 };
