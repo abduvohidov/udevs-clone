@@ -1,7 +1,9 @@
+import useWideScreen from "@/shared/lib/hooks/useWideScreen";
 import React from "react";
 import { Typewriter } from "../../../../node_modules/react-simple-typewriter/dist/index";
 
 export const IntroTypeWritter = () => {
+	const isWideScreen = useWideScreen();
 	const content = [
 		"Разработка мобильных приложений",
 		"Разработка и внедрение ERP систем",
@@ -14,7 +16,7 @@ export const IntroTypeWritter = () => {
 			style={{
 				color: `var(--primary)`,
 				fontWeight: "500",
-				fontSize: "42px",
+				fontSize: `${isWideScreen ? "42px" : "24px"}`,
 				lineHeight: "54px",
 			}}
 		>

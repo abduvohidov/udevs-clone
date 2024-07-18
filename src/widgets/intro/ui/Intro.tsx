@@ -1,6 +1,5 @@
 import { Logo } from "@/shared/ui/logo/logo";
 import { Container } from "@/shared/ui/grid/container";
-import Image from "../../../../node_modules/next/image";
 import { IntroVector } from "@/shared/assets/icons/vectors";
 import { primaryBgImage } from "@/shared/assets/icons/bg-image";
 
@@ -20,7 +19,10 @@ export const Intro = () => {
 			<Container>
 				<Flex justify="between" align="center" className="intro-wrapper">
 					<div className="intro-left-part">
-						<Logo width={297} height={89} />
+						<Logo
+							width={isWideScreen ? 297 : 125}
+							height={isWideScreen ? 89 : 41}
+						/>
 						<h1 className="intro-title">IT-Аутсорсинг Компания</h1>
 						<IntroTypeWritter />
 						<div className="intro-btn-wrapper">
@@ -35,12 +37,7 @@ export const Intro = () => {
 							)}
 						</div>
 					</div>
-					<Image
-						src={IntroVector}
-						width={550}
-						height={414}
-						alt="Intro vector"
-					/>
+					<img src={IntroVector} className="intro-image" alt="Intro vector" />
 				</Flex>
 			</Container>
 		</div>
