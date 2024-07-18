@@ -11,6 +11,9 @@
 	background-color: var(--primary);
 	transition: all 0.2s ease-in-out;
 	box-sizing: border-box;
+	&:hover {
+		scale: 1.1;
+	}
 }
 .full-width-btn {
 	width: 100%;
