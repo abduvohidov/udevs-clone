@@ -1,6 +1,4 @@
-import { Navigation } from "@/widgets/navigation/index";
-
 export const HomePage = () => {
 
-  return <><Navigation/></>
+  return <><h1>Home page</h1></>
 };
