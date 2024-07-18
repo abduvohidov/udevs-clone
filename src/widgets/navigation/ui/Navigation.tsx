@@ -7,9 +7,11 @@ import { Button } from "@/shared/ui/button/button";
 import { NavList } from "@/features/navList/index";
 import { Container } from "@/shared/ui/grid/container";
 import { NavMobile } from "@/enitites/nav-moblie/index";
+import useWideScreen from "@/shared/lib/hooks/useWideScreen";
 
 export const Navigation = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
+	const isWideScreen = useWideScreen();
 
 	return (
 		<nav className="nav">
@@ -23,16 +25,18 @@ export const Navigation = () => {
 						<Bars color="blue" width="20" height="20" />
 					</button>
 					{isOpen && <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />}
-					<Flex align="center" justify="between">
-						<NavList />
-						<Button
-							margin="0 0 0 20px"
-							url="/contact"
-							type="link"
-							width="notfull"
-							content="Связаться"
-						/>
-					</Flex>
+					{isWideScreen && (
+						<Flex align="center" justify="between">
+							<NavList />
+							<Button
+								margin="0 0 0 20px"
+								url="/contact"
+								type="link"
+								width="notfull"
+								content="Связаться"
+							/>
+						</Flex>
+					)}
 				</Flex>
 			</Container>
 		</nav>
