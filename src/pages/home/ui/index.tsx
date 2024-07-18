@@ -1,4 +1,11 @@
-zexport const HomePage = () => {
+import { Intro } from "@/widgets/intro/index";
+import { Navigation } from "@/widgets/navigation/index";
 
-  return <><h1>Home page</h1></>
+export const HomePage = () => {
+	return (
+		<>
+		<Navigation/>
+		<Intro/>
+		</>
+	);
 };

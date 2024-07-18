@@ -5,13 +5,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 100px 0px;
-	&-flex {
+
+	&-left-part {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	&-flex-column {
-		display: flex;
+		align-items: flex-start;
 		flex-direction: column;
 		gap: 30px;
 		width: 550px;
@@ -23,5 +20,11 @@
 		font-weight: 700;
 		line-height: 54px;
 		color: var(--secondary);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.intro-wrapper {
+		flex-direction: column !important;
 	}
 }
