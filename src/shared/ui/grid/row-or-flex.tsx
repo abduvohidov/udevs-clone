@@ -6,7 +6,7 @@ export type RowOrFlexProps = PropsWithChildren<{
 	column?: boolean;
 	reverse?: boolean;
 	align?: "start" | "center" | "stretch" | "end";
-	justify?: "start" | "center" | "stretch" | "end";
+	justify?: "start" | "center" | "stretch" | "end" | "between";
 	className?: string;
 }>;
 
