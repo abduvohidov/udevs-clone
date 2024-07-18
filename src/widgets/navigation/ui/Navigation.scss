@@ -1,0 +1,43 @@
+.nav {
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	position: fixed;
+	padding: 0 15px;
+	background-color: #fff;
+	box-shadow: 0 1px 0 #e5e9f2;
+
+	&-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 0;
+	}
+
+	&__navbar {
+		gap: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.active {
+	border-bottom-color: var(--primary);
+}
+
+//mobile
+.nav-mobile-open {
+	display: none;
+	background: none;
+	border: none;
+}
+
+@media only screen and (max-width: 992px) {
+	.nav__navbar {
+		display: none;
+	}
+	.nav-mobile-open {
+		display: block;
+	}
+}
