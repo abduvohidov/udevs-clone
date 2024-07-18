@@ -1,5 +1,5 @@
 "use client";
-import { arrowBottomIcon } from "@/shared/assets/arrow-bottom";
+import { arrowBottomIcon } from "@/shared/assets/icons/arrow-bottom";
 import { NAVLIST_CONTENT } from "@/shared/lib/contents/navList-content";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
