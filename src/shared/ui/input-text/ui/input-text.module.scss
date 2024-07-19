@@ -5,6 +5,7 @@
   height: 58px;
   color: black;
   border: 1px solid rgb(184 184 184);
+  display: block !important;
 }
 
 .InputWrapper {
@@ -12,9 +13,9 @@
   position: relative;
   line-height: 14px;
   margin: 0 10px;
-  display: inline-block;
+  display: block;
   min-width: 200px;
-  max-width: 12.5rem;
+  max-width: 424px;
   height: 2.5rem;
   background-color: #fff;
 }
@@ -28,6 +29,7 @@
   outline: none;
   background: none;
   cursor: pointer;
+  display: block !important;
 }
 
 .InputText:focus {
