@@ -1,8 +1,11 @@
-export function classNames(additions?: string[]): string;
-export function classNames(objectClasses?: Record<string, boolean>, additions?: string[]): string;
-export function classNames(className?: string, objectClasses?: Record<string, boolean>, additions?: string[]): string;
-export function classNames(className?: string | Record<string, boolean> | string[], objectClasses?: Record<string, boolean> | string[], additions?: string[]): string {
-    let classes: string[] = []
+type Additions = Array<string | undefined>;
+type ObjectClasses = Record<string, boolean>;
+
+export function classNames(additions?: Additions): string;
+export function classNames(objectClasses?: ObjectClasses, additions?: Additions): string;
+export function classNames(className?: string, objectClasses?: ObjectClasses, additions?: Additions): string;
+export function classNames(className?: string | ObjectClasses | Additions, objectClasses?: ObjectClasses | Additions, additions?: Additions): string {
+    let classes: Additions = []
 
     if(!className) {
         return ""
