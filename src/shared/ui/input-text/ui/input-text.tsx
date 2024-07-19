@@ -5,7 +5,7 @@ import { useState } from "react";
 interface IInputText {
   labelText: string;
   type?: string;
-  className?: string | undefined;
+  className?: Array<string>;
 }
 
 export const InputText = ({ type = "text", labelText, className }: IInputText) => {

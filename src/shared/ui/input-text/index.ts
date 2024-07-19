@@ -1,1 +1,1 @@
-export { InputText } from "./input-text";
+export * from "./ui/input-text";
