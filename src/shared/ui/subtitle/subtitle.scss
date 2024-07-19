@@ -1,0 +1,23 @@
+.componetns-subtitle {
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: 500;
+	color: var(--dark);
+}
+.clients-subtitle {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 600;
+	color: var(--font-color);
+}
+@media (max-width: 768px) {
+	.componetns-subtitle {
+		font-size: 16px;
+		line-height: 30px;
+		margin-top: 16px;
+	}
+	.clients-subtitle {
+		font-size: 16px;
+		line-height: 30px;
+	}
+}
