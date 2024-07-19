@@ -1,0 +1,17 @@
+.custom-title {
+	font-size: 64px;
+	font-weight: 700;
+	max-width: 800px;
+	line-height: 64px;
+	text-align: start;
+	color: var(--primary);
+}
+
+@media (max-width: 768px) {
+	.custom-title {
+		font-size: 32px;
+		max-width: 270px;
+		line-height: 40px;
+		text-align: center;
+	}
+}
