@@ -10,6 +10,7 @@ export const Service = () => {
 	const content = SERVICE_CONTENT.map((object) => {
 		return <ServiceCard title={object.title} image={object.image} />;
 	});
+
 	return (
 		<section id="/service">
 			<Container>
