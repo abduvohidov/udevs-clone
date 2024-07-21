@@ -1,5 +1,6 @@
 import { Contacts } from "@/enitites/contacts";
 import { Header } from "@/widgets/header";
+import { OurTeam } from "@/widgets/our-team/index";
 import { Service } from "@/widgets/service";
 
 export const HomePage = () => {
@@ -8,7 +9,9 @@ export const HomePage = () => {
     <>
       <Header />
       <Service />
+      <OurTeam/>
       <Contacts/>
+  
     </>
   );
 };
