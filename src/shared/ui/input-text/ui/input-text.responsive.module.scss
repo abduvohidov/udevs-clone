@@ -1,0 +1,13 @@
+@import "@/app/styles/variables";
+
+@include responsive($max, $breakpoint_md) {
+    .Input {
+        width: 100% !important;
+    }
+}
+
+@include responsive($max, $breakpoint_sm) {
+    .Input {
+        width: 100% !important;
+    }
+}

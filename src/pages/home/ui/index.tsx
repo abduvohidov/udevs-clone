@@ -1,4 +1,4 @@
-import { Contacts } from "@/enitites/contacts";
+import { Contacts } from "@/widgets/contacts";
 import { Header } from "@/widgets/header";
 import { Service } from "@/widgets/service";
 

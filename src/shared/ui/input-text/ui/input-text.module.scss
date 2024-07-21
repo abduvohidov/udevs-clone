@@ -1,8 +1,9 @@
+@import "./input-text.responsive.module.scss";
 .Input {
   padding-inline: 0.6em;
   border-radius: 4px;
   max-width: 424px;
-  height: 58px;
+  height: 100%;
   color: black;
   border: 1px solid rgb(184 184 184);
   display: block !important;
@@ -16,7 +17,7 @@
   display: block;
   min-width: 200px;
   max-width: 424px;
-  height: 2.5rem;
+  height: 3.5rem;
   background-color: #fff;
 }
 
@@ -51,18 +52,17 @@
 .InputLabel {
   position: absolute;
   left: 0.4rem;
-  top: 0.8rem;
+  top: 1.4rem;
   padding: 0 0.5rem;
   color: #a4a7aa;
   cursor: text;
-  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in,
-    color 200ms ease-in;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in, color 200ms ease-in;
   background-color: #fff;
 }
 
 .RequiredMessage {
   color: red;
-  margin-bottom: 0;
+  margin: 10px auto -10px auto !important;
   font-weight: 400;
   padding: 0 10px;
 }
