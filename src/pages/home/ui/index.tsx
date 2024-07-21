@@ -11,7 +11,6 @@ export const HomePage = () => {
       <Service />
       <OurTeam/>
       <Contacts/>
-  
     </>
   );
 };
