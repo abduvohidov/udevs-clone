@@ -1,6 +1,6 @@
 import useWideScreen from "@/shared/lib/hooks/useWideScreen";
 import React from "react";
-import { Typewriter } from "../../../../node_modules/react-simple-typewriter/dist/index";
+import { Typewriter } from "react-simple-typewriter";
 
 export const IntroTypeWritter = () => {
 	const isWideScreen = useWideScreen();

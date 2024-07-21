@@ -4,7 +4,7 @@ import { IntroVector } from "@/shared/assets/icons/vectors";
 import { primaryBgImage } from "@/shared/assets/icons/bg-image";
 
 import "./Intro.scss";
-import { IntroTypeWritter } from "@/enitites/intro-typewritter/index";
+import { IntroTypeWritter } from "@/enitites/intro-type-writter/index";
 import { Button } from "@/shared/ui/button/button";
 import { Flex } from "@/shared/ui/grid/flex";
 import useWideScreen from "@/shared/lib/hooks/useWideScreen";
