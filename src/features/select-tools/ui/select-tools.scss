@@ -1,0 +1,41 @@
+.radio-button {
+	font-size: 14px !important;
+    line-height: 30px !important;
+    font-weight: 600 !important;
+    font-family: Manrope Medium, sans-serif !important;
+    color: #000;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&__input {
+		display: none;
+	}
+
+	&__custom {
+		width: 16px;
+		height: 16px;
+		border: 2px solid #0066ff;
+		border-radius: 50%;
+		margin-right: 8px;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			background-color: #0066ff;
+			border-radius: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity 0.2s ease;
+		}
+	}
+
+	&__input:checked + .radio-button__custom:before {
+		opacity: 1;
+	}
+}
