@@ -1,6 +1,7 @@
 import React from "react";
-import "./socailMediaList.scss";
-import Link from "../../../../node_modules/next/link";
+import "./social-media-list.scss";
+import Link from "next/link";
+
 export const SocailMediaList = () => {
 	return (
 		<ul className="social-media-list">

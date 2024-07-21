@@ -1,10 +1,10 @@
-import "./Navigation.scss";
+import "./navigation.scss";
 import { useState } from "react";
 import { Bars } from "@gravity-ui/icons";
 import { Logo } from "@/shared/ui/logo/logo";
 import { Flex } from "@/shared/ui/grid/flex";
 import { Button } from "@/shared/ui/button/button";
-import { NavList } from "@/features/navList/index";
+import { NavList } from "@/features/nav-list/index";
 import { Container } from "@/shared/ui/grid/container";
 import { NavMobile } from "@/enitites/nav-moblie/index";
 import useWideScreen from "@/shared/lib/hooks/useWideScreen";

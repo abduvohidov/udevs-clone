@@ -1,10 +1,10 @@
 "use client";
 import { arrowBottomIcon } from "@/shared/assets/icons/arrow-bottom";
-import { NAVLIST_CONTENT } from "@/shared/lib/contents/navList-content";
+import { NAVLIST_CONTENT } from "@/shared/lib/contents/nav-list-content";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import "./NavList.scss";
+import "./nav-list.scss";
 export const NavList = () => {
 	const pathname = usePathname();
 	const content = NAVLIST_CONTENT?.map(

@@ -18,7 +18,7 @@ export const Contacts = () => {
               className="my-4 h-25"
               labelText="Кратко опишите свой проект"
             />
-            <Button width="full" type="button" url="#!" content="Отправить" />
+            <Button width="notfull" type="button" margin="0 0.5rem" url="#!" content="Отправить" />
           </Col>
           <Col xxl={6}>
             <iframe

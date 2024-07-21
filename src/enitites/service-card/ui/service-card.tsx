@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "../../../../node_modules/next/image";
-import "./serviceCard.scss";
+import "./service-card.scss";
 
 interface ServiceCardProps {
 	title: string;

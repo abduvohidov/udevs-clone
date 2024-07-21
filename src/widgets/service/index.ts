@@ -1,1 +1,1 @@
-export { Service } from "./ui/Service";
+export * from "./ui//service";

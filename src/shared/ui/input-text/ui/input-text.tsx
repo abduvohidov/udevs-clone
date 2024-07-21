@@ -1,3 +1,4 @@
+"use-client"
 import { classNames } from "@/shared/lib/classNames/classNames";
 import cls from "./input-text.module.scss";
 import { useState } from "react";
@@ -13,7 +14,7 @@ export const InputText = ({ type = "text", labelText, className}: IInputText) =>
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocus = () => {
-    setIsFocused(true);
+    setIsFocused(!true);
   };
 
   const handleBlur = () => {

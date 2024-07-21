@@ -1,4 +1,4 @@
-import "./button.scss";
+import "./button.scss"
 import React, { FC } from "react";
 import Link from "../../../../node_modules/next/link";
 
@@ -26,14 +26,14 @@ export const Button: FC<ButtonProps> = ({
 	return type === "button" ? (
 		<button
 			style={custom_style}
-			className={`custom_btn ${width === "full" ? "full-width-btn" : ""}`}
+			className={`custom-btn ${width === "full" ? "full-width-btn" : ""}`}
 		>
 			{content}
 		</button>
 	) : (
 		<Link
 			style={custom_style}
-			className={`custom_btn ${width === "full" ? "full-width-btn" : ""}`}
+			className={`custom-btn ${width === "full" ? "full-width-btn" : ""}`}
 			href={url}
 		>
 			{content}

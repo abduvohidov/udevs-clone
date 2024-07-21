@@ -1,1 +1,1 @@
-export { ServiceCard } from "./ui/serviceCard"
+export * from "./ui/service-card"

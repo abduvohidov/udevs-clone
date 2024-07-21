@@ -1,11 +1,11 @@
-import "./NavMobile.scss";
+import "./nav-mobile.scss";
 import { Xmark } from "@gravity-ui/icons";
 import { Logo } from "@/shared/ui/logo/logo";
+import { Flex } from "@/shared/ui/grid/flex";
 import { Button } from "@/shared/ui/button/button";
 import Link from "../../../../node_modules/next/link";
 import React, { FC, Dispatch, SetStateAction } from "react";
-import { SocailMediaList } from "@/shared/ui/socialMedia-list/socailMediaList";
-import { Flex } from "@/shared/ui/grid/flex";
+import { SocailMediaList } from "@/shared/ui/social-media-list/ui/social.media-list";
 
 interface NavMobileProps {
 	setIsOpen: Dispatch<SetStateAction<boolean>>;

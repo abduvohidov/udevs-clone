@@ -1,7 +1,7 @@
 import { LogoImage } from "@/shared/assets/icons/logo";
 import React, { FC } from "react";
 import Image from "../../../../node_modules/next/image";
-import { Link } from "../link/link";
+import { Link } from "../link/ui/link";
 
 interface LogoProps {
 	width?: number;

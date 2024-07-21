@@ -1,1 +1,1 @@
-export { Intro } from "./ui/Intro";
+export * from "./ui/Intro";

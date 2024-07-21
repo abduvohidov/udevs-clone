@@ -1,4 +1,14 @@
-export const HomePage = () => {
+import { Contacts } from "@/enitites/contacts";
+import { Header } from "@/widgets/header";
+import { Service } from "@/widgets/service";
 
-  return <><h1>Home page</h1></>
+export const HomePage = () => {
+  // return <><h1>Home page</h1></>
+  return (
+    <>
+      <Header />
+      <Service />
+      <Contacts/>
+    </>
+  );
 };
