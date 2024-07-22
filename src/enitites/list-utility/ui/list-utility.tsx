@@ -1,7 +1,7 @@
 import { FC } from "react";
 import "./list-utility.scss";
 
-interface ListUtilityProps {
+export interface ListUtilityProps {
 	data: Array<{
 		title: string;
 		icon: string;

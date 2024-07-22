@@ -1,0 +1,33 @@
+.SectionOSUtilities {
+  min-width: 130px !important;
+  img {
+    margin-bottom: -10px !important;
+  }
+  p {
+    font-size: 20px;
+    padding-left: 3px;
+  }
+}
+.SectionTechnologyUtilities {
+  min-width: 50px !important;
+  img {
+    margin-bottom: -10px !important;
+  }
+  p {
+    font-size: 20px;
+    padding-left: 3px;
+  }
+}
+
+.SectionMainImage {
+  background-image: url("https://udevs.io/static/bg_pattern-bfa00f19a06604ab492274cd3d9ea5cf.png");
+  background-size: cover;
+  margin: 30px 50px !important;
+  width: 90%;
+  height: 100% !important;
+}
+
+.TitleBottom {
+  font-size: 32px;
+  font-weight: 400;
+}
