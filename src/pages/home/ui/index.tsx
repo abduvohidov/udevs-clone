@@ -1,3 +1,4 @@
+
 import { Contacts } from "@/widgets/contacts";
 import { Header } from "@/widgets/header";
 import { OurTeam } from "@/widgets/our-team/index";
@@ -9,8 +10,8 @@ export const HomePage = () => {
     <>
       <Header />
       <Service />
-      <OurTeam/>
-      <Contacts/>
+      <OurTeam />
+      <Contacts />
     </>
   );
 };
