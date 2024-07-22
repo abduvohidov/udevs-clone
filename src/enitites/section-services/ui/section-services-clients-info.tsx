@@ -11,7 +11,7 @@ export const SectionServicesClientInfo = ({
   img,
 }: ISectionServiceInfo & IImage) => {
   return (
-    <Col xxl={6} lg={6} className="ps-2">
+    <Col xxl={6} lg={6} className="d-flex align-items-center">
       <img src={img} alt=".png" />
       <Subtitle subtitleFor="components" children={titleSub} />
       <h2 className={cls.TitleBottom}>{titleBottom}</h2>
