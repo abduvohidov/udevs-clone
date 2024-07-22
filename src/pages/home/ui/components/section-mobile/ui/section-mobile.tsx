@@ -1,10 +1,7 @@
+import { icons, technology } from "./constants";
 import { SectionServices } from "@/enitites/section-services";
-import {
-  TypesSectionService,
-  TypesSectionServiceSides,
-} from "@/enitites/section-services/types";
-import { mobile_os, technology } from "./constants";
 import { primaryBgImage } from "@/shared/assets/icons/bg-image";
+import { TypesSectionService, TypesSectionServiceSides } from "@/enitites/section-services/types";
 
 export const SectionMobile = () => {
   const image =
@@ -21,7 +18,7 @@ export const SectionMobile = () => {
         typeService={TypesSectionService.isSERVICES}
         title="Мобильная разработка"
         titleSub="В сотрудничестве со стартапами мы научились создавать творческий и функциональный пользовательский интерфейс для мобильных приложений."
-        utilityTop={mobile_os}
+        utilityTop={icons}
         titleBottom="Технологии"
         utilityBottom={technology}
         img={image}

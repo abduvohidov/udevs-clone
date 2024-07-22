@@ -16,7 +16,7 @@ export interface ISectionServiceIcon {
   title: string;
 }
 
-export const erp: Array<ISectionServiceIcon> = [
+export const icons: Array<ISectionServiceIcon> = [
   {
     id: 1,
     icon: LogoCRM,

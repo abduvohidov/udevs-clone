@@ -13,7 +13,7 @@ import {
     title: string;
   }
   
-  export const mobile_os: Array<ISectionServiceIcon> = [
+  export const icons: Array<ISectionServiceIcon> = [
     {
       id: 1,
       icon: LogoIOS,
