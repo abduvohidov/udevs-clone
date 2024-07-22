@@ -9,6 +9,10 @@ import { SectionErpSystem } from "./components/section-erp-system";
 import { SectionDesign } from "./components/section-design";
 import { SectionOptimizationInfrostucture } from "./components/section-optimization-infrostructure";
 import { SectionItConsulting } from "./components/section-itconsulting";
+import { SectionDelever } from "./components/section-delever";
+import { SectionSmsuz } from "./components/section-smsuz";
+import { SectionGoodzone } from "./components/section-goodzone";
+import { SectionIman } from "./components/section-iman";
 
 export const HomePage = () => {
   return (
@@ -21,8 +25,12 @@ export const HomePage = () => {
       <SectionDesign />
       <SectionOptimizationInfrostucture />
       <SectionItConsulting />
-      <Instruments/>
-      <OurClients/>
+      <Instruments />
+      <OurClients />
+      <SectionDelever />
+      <SectionSmsuz />
+      <SectionGoodzone />
+      <SectionIman />
       <Contacts />
     </>
   );

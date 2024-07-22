@@ -11,7 +11,7 @@ export const SectionItConsulting = () => {
 
   return (
     <section
-      id="SectionDesign"
+      id="SectionItConsulting"
       className="my-5"
       style={{ backgroundImage: `url(${primaryBgImage})` }}
     >
