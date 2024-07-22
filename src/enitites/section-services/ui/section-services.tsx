@@ -1,19 +1,11 @@
-import { Col, Container, Flex, Row } from "@/shared/ui/grid";
-import cls from "./section-services.module.scss";
 import { Title } from "@/shared/ui/title";
-import { Subtitle } from "@/shared/ui/subtitle";
-import { ListUtility, ListUtilityProps } from "@/enitites/list-utility";
-
-interface ISectionService {
-  title: string;
-  titleSub: string;
-  titleBottom: string;
-  utilityTop: Array<ListUtilityProps & any>;
-  utilityBottom: Array<ListUtilityProps & any>;
-  img: string;
-}
+import { SectionLeft } from "./section-leftside";
+import { Container, Row } from "@/shared/ui/grid";
+import { SectionRight } from "./section-rigthside";
+import { ISectionService, TypesSectionService } from "../types";
 
 export const SectionServices = ({
+  typeSides,
   title,
   titleSub,
   titleBottom,
@@ -21,24 +13,35 @@ export const SectionServices = ({
   utilityBottom,
   img,
 }: ISectionService) => {
+  function sectionServiceType() {
+    if (typeSides === TypesSectionService.RIGHT) {
+      return (
+        <SectionRight
+          titleSub={titleSub}
+          titleBottom={titleBottom}
+          utilityTop={utilityTop}
+          utilityBottom={utilityBottom}
+          img={img}
+        />
+      );
+    } else if (typeSides === TypesSectionService.LEFT) {
+      return (
+        <SectionLeft
+          titleSub={titleSub}
+          titleBottom={titleBottom}
+          utilityTop={utilityTop}
+          utilityBottom={utilityBottom}
+          img={img}
+        />
+      );
+    }
+  }
+
   const section = (
     <Container>
       <Row className="mx-auto">
         <Title children={title} />
-        <Col xxl={6}>
-          <Subtitle subtitleFor="components" children={titleSub} />
-          <ListUtility data={utilityTop} className={cls.SectionOSUtilities} />
-          <h2>{titleBottom}</h2>
-          <ListUtility
-            data={utilityBottom}
-            className={cls.SectionTechnologyUtilities}
-          />
-        </Col>
-        <Col xxl={6}>
-          <Flex justify="center">
-            <img src={img} alt=".png" className={cls.SectionMainImage} />
-          </Flex>
-        </Col>
+        {sectionServiceType()}
       </Row>
     </Container>
   );
