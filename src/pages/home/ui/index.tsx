@@ -1,6 +1,7 @@
 import { Contacts } from "@/widgets/contacts";
 import { Header } from "@/widgets/header";
 import { OurTeam } from "@/widgets/our-team/index";
+import { SectionMobile } from "@/widgets/section-mobile";
 import { Service } from "@/widgets/service";
 
 export const HomePage = () => {
@@ -10,6 +11,7 @@ export const HomePage = () => {
       <Header />
       <Service />
       <OurTeam />
+      <SectionMobile />
       <Contacts />
     </>
   );
