@@ -1,4 +1,67 @@
 .select-list{
+<<<<<<< HEAD
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.card-select {
+	width: 98px;
+	height: 102px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	opacity: 1;
+	border-radius: 5px;
+
+	&-title {
+		white-space: nowrap;
+		font-size: 14px;
+		line-height: 13px;
+		color: #000;
+		margin-top: 15px;
+		width: 100%;
+		max-width: 90px;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	&-image{
+		width: 26px;
+		height: 26px;
+		margin-top: 10px;
+	}
+}
+
+.with-opacity {
+	opacity: 0.4;
+	background: none !important;
+	transition: opacity 0.2s linear;
+}
+
+.Frontend {
+	background-color: var(--frontend);
+}
+.Backend {
+	background-color: var(--backend);
+}
+.Devops {
+	background-color: var(--devops);
+}
+.Testing {
+	background-color: var(--testing);
+}
+.UXUI {
+	background-color: var(--design);
+}
+.Infrastructure {
+	background-color: var(--infrastructure);
+}
+.Mobile {
+	background-color: var(--mobile);
+}
+=======
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
@@ -61,3 +124,4 @@
 		background-color: var(--mobile);
 	}
 	
+>>>>>>> 87a116e28583124e99bb03eaa50fb7ed04032c03
