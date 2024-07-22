@@ -7,11 +7,15 @@ import { mobile_os, technology } from "./constants";
 import { primaryBgImage } from "@/shared/assets/icons/bg-image";
 
 export const SectionMobile = () => {
-
-  const image = "https://udevs.io/static/mobile_dev-6180df87085fd146c501a19e6156fbd2.png"
+  const image =
+    "https://udevs.io/static/mobile_dev-6180df87085fd146c501a19e6156fbd2.png";
 
   return (
-    <section id="SectionMobile" style={{backgroundImage: `url(${primaryBgImage})`}}>
+    <section
+      id="SectionMobile"
+      className="my-5"
+      style={{ backgroundImage: `url(${primaryBgImage})` }}
+    >
       <SectionServices
         typeSides={TypesSectionServiceSides.RIGHT}
         typeService={TypesSectionService.isSERVICES}

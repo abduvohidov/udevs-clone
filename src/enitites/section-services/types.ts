@@ -12,7 +12,7 @@ export enum TypesSectionService {
 
 export interface ISectionService extends ISectionServiceInfo, IImage {
   typeSides: string;
-  typeService: string; 
+  typeService: string;
   title?: string;
   logo?: string;
 }
@@ -22,6 +22,7 @@ export interface ISectionServiceInfo {
   titleBottom?: string;
   utilityTop: Array<ListUtilityProps & any>;
   utilityBottom?: Array<ListUtilityProps & any>;
+  bgColorUtility?: "light" | "darker";
 }
 
 export interface IImage {

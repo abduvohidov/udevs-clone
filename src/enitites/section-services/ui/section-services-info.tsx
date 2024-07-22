@@ -9,11 +9,12 @@ export const SectionServicesInfo = ({
   titleBottom,
   utilityTop,
   utilityBottom,
+  bgColorUtility
 }: ISectionServiceInfo) => {
   return (
     <Col xxl={6} lg={6} className="ps-2">
       <Subtitle subtitleFor="components" children={titleSub} />
-      <ListUtility data={utilityTop} className={cls.SectionOSUtilities} />
+      <ListUtility data={utilityTop} className={cls.SectionOSUtilities} bgColor={bgColorUtility}/>
       <h2 className={cls.TitleBottom}>{titleBottom}</h2>
       <ListUtility
         data={utilityBottom || []}
