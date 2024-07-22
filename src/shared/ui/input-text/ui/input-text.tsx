@@ -14,7 +14,9 @@ export const InputText = ({ type = "text", labelText, className}: IInputText) =>
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocus = () => {
-    setIsFocused(!true);
+    if(!value.length) {
+      setIsFocused(true);
+    }
   };
 
   const handleBlur = () => {
@@ -26,7 +28,7 @@ export const InputText = ({ type = "text", labelText, className}: IInputText) =>
   return (
     <>
       {isFocused && !value && (
-        <h4 className={cls.RequiredMessage}>Заполните поле</h4>
+        <p className={cls.RequiredMessage}>Заполните поле</p>
       )}
       <div className={classNames([cls.InputWrapper, className])}>
         <input

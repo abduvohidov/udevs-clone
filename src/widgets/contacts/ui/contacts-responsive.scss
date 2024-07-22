@@ -1,0 +1,28 @@
+@import "@/app/styles/variables";
+
+@include responsive($max, "1399px") {
+  .card-contacts {
+    padding: 100px 80px;
+  }
+}
+
+@include responsive($max, "1199px") {
+  .card-contacts {
+    .card-contacts-info {
+      margin-top: 150px !important;
+    }
+  }
+}
+
+@include responsive($max, "768px") {
+  .card-contacts {
+    padding: 50px 40px;
+  }
+}
+
+@include responsive($max, $breakpoint_sm) {
+  .yandex-map {
+    width: 300px;
+    height: 150px;
+  }
+}
