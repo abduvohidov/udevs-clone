@@ -1,50 +1,36 @@
 import { Title } from "@/shared/ui/title";
-import { SectionLeft } from "./section-leftside";
 import { Container, Row } from "@/shared/ui/grid";
-import { SectionRight } from "./section-rigthside";
-import { ISectionService, TypesSectionService } from "../types";
+import { SectionServicesInfo } from "./section-services-info";
+import { SectionServicesImage } from "./section-services-img";
+import { SectionServicesClientInfo } from "./section-services-clients-info";
+import { ISectionService, TypesSectionService, TypesSectionServiceSides } from "../types";
 
 export const SectionServices = ({
   typeSides,
+  typeService,
   title,
   titleSub,
   titleBottom,
   utilityTop,
   utilityBottom,
   img,
+  logo,
 }: ISectionService) => {
-  function sectionServiceType() {
-    if (typeSides === TypesSectionService.RIGHT) {
-      return (
-        <SectionRight
-          titleSub={titleSub}
-          titleBottom={titleBottom}
-          utilityTop={utilityTop}
-          utilityBottom={utilityBottom}
-          img={img}
-        />
-      );
-    } else if (typeSides === TypesSectionService.LEFT) {
-      return (
-        <SectionLeft
-          titleSub={titleSub}
-          titleBottom={titleBottom}
-          utilityTop={utilityTop}
-          utilityBottom={utilityBottom}
-          img={img}
-        />
-      );
-    }
-  }
 
-  const section = (
+  const isLeft = typeSides == TypesSectionServiceSides.LEFT && <SectionServicesImage img={img} />
+  const isRight = typeSides == TypesSectionServiceSides.RIGHT && <SectionServicesImage img={img} />
+  const isService = typeService == TypesSectionService.isSERVICES && <SectionServicesInfo titleSub={titleSub} titleBottom={titleBottom} utilityTop={utilityTop} utilityBottom={utilityBottom}/>
+  const isClient = typeService == TypesSectionService.isCLIENT && <SectionServicesClientInfo titleSub={titleSub} titleBottom={titleBottom} utilityTop={utilityTop} utilityBottom={utilityBottom} img={logo || ""}/>
+
+  return (
     <Container>
       <Row className="mx-auto">
-        <Title children={title} />
-        {sectionServiceType()}
+        <Title children={title || ""} />
+        {isLeft}
+        {isService}
+        {isClient}
+        {isRight}
       </Row>
     </Container>
   );
-
-  return section;
 };

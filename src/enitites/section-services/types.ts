@@ -1,15 +1,20 @@
 import { ListUtilityProps } from "../list-utility";
 
-export enum TypesSectionService {
+export enum TypesSectionServiceSides {
   RIGHT = "RIGHT",
   LEFT = "LEFT",
 }
 
-export enum TypesUtility {}
+export enum TypesSectionService {
+  isSERVICES = "SERVICES",
+  isCLIENT = "CLIENT",
+}
 
 export interface ISectionService extends ISectionServiceInfo, IImage {
   typeSides: string;
-  title: string;
+  typeService: string; 
+  title?: string;
+  logo?: string;
 }
 
 export interface ISectionServiceInfo {
