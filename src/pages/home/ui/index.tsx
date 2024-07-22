@@ -6,6 +6,7 @@ import { Service } from "@/widgets/service";
 import { SectionErpSystem } from "./components/section-erp-system";
 import { SectionDesign } from "./components/section-design";
 import { SectionOptimizationInfrostucture } from "./components/section-optimization-infrostructure";
+import { SectionItConsulting } from "./components/section-itconsulting";
 
 export const HomePage = () => {
   // return <><h1>Home page</h1></>
@@ -18,6 +19,7 @@ export const HomePage = () => {
       <SectionErpSystem />
       <SectionDesign />
       <SectionOptimizationInfrostucture />
+      <SectionItConsulting />
       <Contacts />
     </>
   );
