@@ -1,7 +1,7 @@
 import { Contacts } from "@/widgets/contacts";
 import { Header } from "@/widgets/header";
 import { OurTeam } from "@/widgets/our-team/index";
-import { SectionMobile } from "@/widgets/section-mobile";
+import { SectionMobile } from "@/pages/home/ui/components/section-mobile";
 import { Service } from "@/widgets/service";
 
 export const HomePage = () => {

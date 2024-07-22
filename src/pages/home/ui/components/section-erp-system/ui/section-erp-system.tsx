@@ -7,19 +7,20 @@ import { mobile_os, technology } from "./constants";
 import { primaryBgImage } from "@/shared/assets/icons/bg-image";
 
 export const SectionMobile = () => {
+
+  const image = "https://udevs.io/static/desktop-be2444bb4c87961054714533a5d5a728.png"
+
   return (
     <section id="SectionMobile" style={{backgroundImage: `url(${primaryBgImage})`}}>
       <SectionServices
-        typeSides={TypesSectionServiceSides.RIGHT}
+        typeSides={TypesSectionServiceSides.LEFT}
         typeService={TypesSectionService.isSERVICES}
-        title="Мобильная разработка"
-        titleSub="В сотрудничестве со стартапами мы научились создавать творческий и функциональный пользовательский интерфейс для мобильных приложений."
+        title="ERP cистемы"
+        titleSub="IT Системы любого уровня сложности в удобные для вас сроки."
         utilityTop={mobile_os}
         titleBottom="Технологии"
         utilityBottom={technology}
-        img={
-          "https://udevs.io/static/mobile_dev-6180df87085fd146c501a19e6156fbd2.png"
-        }
+        img={image}
       />
     </section>
   );
