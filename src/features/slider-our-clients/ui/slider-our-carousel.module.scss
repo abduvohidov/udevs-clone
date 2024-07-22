@@ -1,0 +1,19 @@
+.image {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+	margin-top: 10px;
+	border-radius: 24px;
+	transition: all 0.4s ease-in-out;
+	max-width: 213px;
+	height: 125px;
+}
+
+@media (max-width: 768px) {
+	.image {
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+		margin-top: 10px;
+		border-radius: 24px;
+		transition: all 0.4s ease-in-out;
+		max-width: 130px;
+		height: 78px;
+	}
+}
