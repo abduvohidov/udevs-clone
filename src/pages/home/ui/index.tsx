@@ -9,6 +9,7 @@ import { SectionErpSystem } from "./components/section-erp-system";
 import { SectionDesign } from "./components/section-design";
 import { SectionOptimizationInfrostucture } from "./components/section-optimization-infrostructure";
 import { SectionItConsulting } from "./components/section-itconsulting";
+import { Steps } from "@/widgets/steps/index";
 
 export const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ export const HomePage = () => {
       <SectionItConsulting />
       <Instruments/>
       <OurClients/>
+      <Steps/>
       <Contacts />
     </>
   );

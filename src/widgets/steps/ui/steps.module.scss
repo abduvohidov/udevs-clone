@@ -1,0 +1,35 @@
+.stepsWrapper{
+    margin: 150px auto;
+}
+.stepsFlex{
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.stepsLine{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .stepsFlex{
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stepsLine{
+        transform: rotate(90deg);
+        transform-origin: left top;
+        top: 2%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    .stepsLine{
+        left: 16%;
+    }
+}
