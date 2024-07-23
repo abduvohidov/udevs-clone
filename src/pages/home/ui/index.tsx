@@ -10,6 +10,10 @@ import { SectionDesign } from "./components/section-design";
 import { SectionOptimizationInfrostucture } from "./components/section-optimization-infrostructure";
 import { SectionItConsulting } from "./components/section-itconsulting";
 import { Steps } from "@/widgets/steps/index";
+import { SectionDelever } from "./components-clients/section-delever/index";
+import { SectionSmsuz } from "./components-clients/section-smsuz/index";
+import { SectionIman } from "./components-clients/section-iman/index";
+import { SectionGoodzone } from "./components-clients/section-goodzone/index";
 
 export const HomePage = () => {
   return (
@@ -24,6 +28,10 @@ export const HomePage = () => {
       <SectionItConsulting />
       <Instruments/>
       <OurClients/>
+      <SectionDelever/>
+      <SectionSmsuz/>
+      <SectionGoodzone/>
+      <SectionIman/>
       <Steps/>
       <Contacts />
     </>
