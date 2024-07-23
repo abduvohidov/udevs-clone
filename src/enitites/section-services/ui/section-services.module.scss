@@ -31,3 +31,10 @@
   font-size: 32px;
   font-weight: 400;
 }
+
+.clientsInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}

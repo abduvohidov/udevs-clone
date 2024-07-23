@@ -18,6 +18,7 @@ export const SectionServices = ({
   utilityTop,
   utilityBottom,
   bgColorUtility,
+  clientsProposal,
   img,
   logo,
 }: ISectionService) => {
@@ -38,12 +39,13 @@ export const SectionServices = ({
   );
   const isClient = typeService == TypesSectionService.isCLIENT && (
     <SectionServicesClientInfo
+      img={logo || ""}
       titleSub={titleSub}
-      titleBottom={titleBottom}
       utilityTop={utilityTop}
+      clientsProposal={clientsProposal}
+      titleBottom={titleBottom}
       utilityBottom={utilityBottom}
       bgColorUtility={bgColorUtility}
-      img={logo || ""}
     />
   );
 
