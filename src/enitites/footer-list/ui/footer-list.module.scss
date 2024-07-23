@@ -1,0 +1,18 @@
+.footerListCol {
+	display: flex;
+	flex-direction: column;
+}
+
+.footerListTitle {
+	font-size: 1em;
+}
+
+.footerListLink {
+	font-size: 18px;
+	line-height: 32px;
+	color: var(--primary);
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

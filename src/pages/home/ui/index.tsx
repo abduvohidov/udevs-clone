@@ -14,6 +14,7 @@ import { SectionDelever } from "./components-clients/section-delever/index";
 import { SectionSmsuz } from "./components-clients/section-smsuz/index";
 import { SectionIman } from "./components-clients/section-iman/index";
 import { SectionGoodzone } from "./components-clients/section-goodzone/index";
+import { Footer } from "@/widgets/footer/index";
 
 export const HomePage = () => {
   return (
@@ -34,6 +35,7 @@ export const HomePage = () => {
       <SectionIman/>
       <Steps/>
       <Contacts />
+      <Footer/>
     </>
   );
 };

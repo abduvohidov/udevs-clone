@@ -1,0 +1,29 @@
+.footer {
+	margin-top: 100px;
+	padding-top: 48px;
+	text-align: center;
+	background-color: var(--background);
+}
+.footerTitle {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	color: var(--primary);
+}
+.footerBottom {
+	padding: 25px 0;
+	border-top: 1px solid rgba(27, 91, 247, 0.2);
+}
+.footerLogo {
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.footerTop {
+		flex-direction: column !important;
+	}
+	.footerBottom {
+		border-top: none;
+		flex-direction: column-reverse;
+	}
+}
